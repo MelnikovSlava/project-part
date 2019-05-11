@@ -1,0 +1,125 @@
+@import '../../../../styles/variables.less';
+
+.switch-btn {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    width: 77px;
+    height: 32px;
+    padding: 0 2.5px;
+
+    cursor: pointer;
+
+    border-radius: 16px;
+    background: linear-gradient(180deg, #91CFDF 0%, #BBE5EB 100%);
+    box-shadow: inset 0 0 2px 0 #47A7B8;
+
+    &.on {
+        justify-content: flex-end;
+
+        .internal-btn {
+            background: linear-gradient(180deg, #16738C 0%, #51B1C0 100%);
+
+            .internal-btn-text {
+                color: white;
+            }
+        }
+    }
+
+    .pop {
+        position: absolute;
+        z-index: 100;
+        top: 105px;
+        right: -200%;
+
+        display: none;
+        align-items: center;
+        flex-direction: column;
+
+        width: 375px;
+        height: 477px;
+
+        color: white;
+        border-radius: 25px;
+        background: radial-gradient(at bottom, rgba(0, 155, 152, 1.0), rgba(0, 76, 113, 1.0));
+
+        .pop-icon {
+            position: absolute;
+            top: -86px;
+
+            width: 340px;
+        }
+
+        &.pop-visible {
+            display: flex;
+        }
+
+        .pop-title1 {
+            margin-top: 270px;
+            margin-bottom: 10px;
+
+            letter-spacing: .4px;
+
+            font-family: @f-cera-pro-100-thin;
+            font-size: 24px;
+            line-height: 27px;
+        }
+
+        .pop-title2 {
+            margin: 0;
+
+            letter-spacing: .2px;
+
+            font-family: @f-cera-pro-700-bold;
+            font-size: 24px;
+            line-height: 27px;
+        }
+
+        .pop-desc {
+            width: 320px;
+
+            text-align: center;
+
+            font-family: @f-cera-pro-400-regular;
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        .pop-sw {
+            color: #91FFFF;
+
+            font-family: @f-cera-pro-400-regular;
+            font-size: 13px;
+        }
+    }
+
+    .internal-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 55px;
+        height: 28px;
+
+        border-radius: 14px;
+        background-color: #FFFFFF;
+
+        .internal-btn-text {
+            margin: 0;
+
+            -webkit-user-select: none; /* Google Chrome, Opera Next, Safari */
+               -moz-user-select: none; /* Mozilla Firefox */
+                -ms-user-select: none; /* Internet Explorer (не поддерживается) */
+
+            color: #247F92;
+
+            font-family: @f-cera-pro-700-bold;
+            font-size: 14px;
+            line-height: 18px;
+
+                 -o-user-select: none; /* Opera Presto (не поддерживается) */
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.content-page-container {
+    display: flex;
+    overflow: hidden;
+    flex: 1;
+
+    .content-page-container-wrapper {
+        position: relative;
+
+        flex: 1;
+
+        transition: filter 500ms ease-out;
+
+        &.c-p-c-blur {
+            filter: blur(3px);
+        }
+    }
+}

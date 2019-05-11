@@ -1,0 +1,20 @@
+@import '../../../../styles/mixins.less';
+
+.dapp-sort-bar {
+    .s-b-common();
+
+    .dapp-sort-bar-rank {
+        .itm-rank();
+    }
+
+    .dapp-sort-bar-name {
+        .itm-name();
+        .s-b-name-padding();
+    }
+
+    .dapp-sort-bar-transactions, .dapp-sort-bar-volume, .dapp-sort-bar-hour24, .dapp-sort-bar-week, .dapp-sort-bar-category {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+    }
+}

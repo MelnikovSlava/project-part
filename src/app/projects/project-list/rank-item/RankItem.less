@@ -1,0 +1,29 @@
+@import '../../../../styles/mixins.less';
+@import '../../../../styles/variables.less';
+
+.rank-item {
+    .lst-common();
+
+    position: relative;
+
+    .rank-item-rank {
+        .itm-rank();
+    }
+
+    .rank-item-name {
+        .itm-name();
+    }
+
+    .rank-item-voting, .rank-item-bounty, .rank-item-moving, .rank-item-btn {
+        .itm-flex();
+    }
+
+    .rank-item-btn {
+        border-radius: 4px;
+        background-color: @color-soft;
+
+        &:hover {
+            background-color: darken(@color-soft, 10);
+        }
+    }
+}

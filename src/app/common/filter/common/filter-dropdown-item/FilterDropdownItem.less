@@ -1,0 +1,45 @@
+@import '../../../../../styles/variables.less';
+
+.component-filter-dropdown-item {
+    display: flex;
+    align-items: center;
+
+    padding: 8px;
+
+    cursor: pointer;
+
+    font-family: @f-cera-pro-400-regular;
+    font-size: 14px;
+    line-height: 16px;
+
+    .c-f-d-i-checkbox {
+        width: 23px;
+        height: 23px;
+        margin-right: 10px;
+
+        border-radius: 3px;
+        background-color: #454546;
+
+        .c-f-d-i-icon {
+            width: 18px;
+
+            svg > polygon {
+                opacity: 1;
+
+                fill: white;
+            }
+        }
+    }
+
+    .c-f-d-i-title {
+        margin: 0;
+    }
+
+    &:hover {
+        background-color: #0B424D;
+
+        .c-f-d-i-checkbox {
+            background-color: #3B6770;
+        }
+    }
+}

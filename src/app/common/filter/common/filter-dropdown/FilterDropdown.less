@@ -1,0 +1,71 @@
+@import '../../../../../styles/variables.less';
+
+.filter-dropdown {
+    position: relative;
+
+    padding-bottom: 4px;
+
+
+    .filter-dropdown-header {
+        display: inline-flex;
+
+        padding: 10px 14px;
+        // display: inline-block;
+
+        cursor: pointer;
+
+        border-radius: 4px;
+
+        .filter-dropdown-text {
+            margin: 0;
+            margin-right: 4px;
+
+            letter-spacing: .3px;
+
+            color: @color-primary-light;
+
+            font-family: @f-cera-pro-500-medium;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .filter-dropdown-icon {
+            display: flex;
+            align-items: flex-end;
+
+            svg {
+                width: 12px;
+                margin-bottom: 4px;
+            }
+        }
+
+        &.filter-dropdown-header-hover {
+            background-color: black;
+
+            .filter-dropdown-text {
+                color: white;
+            }
+
+            .filter-dropdown-icon > svg > polygon {
+                fill: white;
+            }
+        }
+    }
+
+    .filter-dropdown-body {
+        position: absolute;
+        z-index: 100;
+
+        overflow-y: auto;
+
+        min-width: 140px;
+        max-width: 233px;
+        max-height: 300px;
+        margin-top: 4px;
+
+        color: white;
+        border-radius: 4px;
+        background-color: black;
+    }
+}
+

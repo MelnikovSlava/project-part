@@ -1,0 +1,71 @@
+@import '../../styles/variables.less';
+
+.menu {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 150px;
+
+    background-color: @color-menu-background;
+
+    .logo-img {
+        width: 101px;
+        margin: 29px 0 23px 14px;
+    }
+
+    .menu-item {
+        justify-content: flex-start;
+
+        height: 32px;
+        margin: 0;
+
+        cursor: pointer;
+
+        color: @color-primary-light;
+
+        font-family: @f-cera-pro-700-bold;
+        font-size: 14px;
+        line-height: 18px;
+
+
+        &:hover {
+            color: white;
+            background-color: lighten(@color-primary-dark, 9);
+        }
+
+        &.active {
+            color: white;
+            background-color: @color-primary-dark;
+            background-image: url('../../assets/img/menu/menu-gradient.png');
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+        }
+
+        &.m-i-all-project, &.m-i-blog, &.m-i-wiki {
+            padding-left: 14px;
+        }
+
+        &.m-i-dapps, &.m-i-apps, &.m-i-blockchains, &.m-i-constructors, &.m-i-media, &.m-i-tokens {
+            padding-left: 26px;
+
+            letter-spacing: .2px;
+
+            font-family: @f-cera-pro-500-medium;
+            font-size: 13.5px;
+        }
+
+        // disabled
+        &.m-i-apps, &.m-i-blockchains, &.m-i-constructors, &.m-i-media, &.m-i-tokens, &.m-i-blog, &.m-i-wiki {
+            cursor: default;
+
+            color: lightgray;
+
+            &:hover {
+                background-color: initial;
+            }
+        }
+    }
+}

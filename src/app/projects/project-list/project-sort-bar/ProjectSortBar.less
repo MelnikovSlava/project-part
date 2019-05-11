@@ -1,0 +1,20 @@
+@import '../../../../styles/variables.less';
+@import '../../../../styles/mixins.less';
+
+.project-sort-bar {
+    .s-b-common();
+
+    .project-sort-bar-rank {
+        .itm-rank();
+    }
+
+    .project-sort-bar-name {
+        .s-b-name-padding();
+
+.itm-name();
+    }
+
+    .project-sort-bar-platform, .project-sort-bar-subtype, .project-sort-bar-blockchain {
+        .itm-flex();
+    }
+}

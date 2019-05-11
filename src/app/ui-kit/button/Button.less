@@ -1,0 +1,58 @@
+@import '../../../styles/variables.less';
+
+.component-button {
+    padding: 10px 17px;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 4px;
+    outline: none;
+
+    font-family: @f-cera-pro-500;
+    font-size: 14px;
+    line-height: 18px;
+
+    &.component-button-white {
+        color: black;
+        background-color: white;
+
+
+        &:hover {
+            background-color: #E5E9F0;
+        }
+
+        &:active {
+            background-color: #CED6E0;
+        }
+    }
+
+    &.component-button-gray {
+        color: black;
+        background-color: #E6E9F0;
+
+        &:hover {
+            background-color: #CED6E0;
+        }
+
+        &:active {
+            background-color: #BEC8D4;
+        }
+    }
+
+    &.component-button-large {
+        padding: 13px 35px;
+
+        color: white;
+        background: linear-gradient(270deg, #16738C 0%, #46A7B7 37.98%, #51B1C0 49.92%, #46A7B7 60.78%, #16738C 100%);
+
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    &.component-button-disabled {
+        opacity: .2;
+        color: #191919;
+        background-color: #E5E9F0;
+    }
+}

@@ -1,0 +1,20 @@
+@import '../../../../styles/variables.less';
+@import '../../../../styles/mixins.less';
+
+.project-list-item {
+    .lst-common();
+
+    .project-list-item-rank {
+        .itm-rank();
+    }
+
+    .project-list-item-name {
+        .itm-name();
+    }
+
+    .project-list-item-transactions, .project-list-item-volume, .project-list-item-hour24, .project-list-item-week, .project-list-item-category {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+    }
+}

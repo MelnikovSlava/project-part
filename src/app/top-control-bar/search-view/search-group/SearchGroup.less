@@ -1,0 +1,35 @@
+@import '../../../../styles/variables.less';
+
+.search-group {
+    display: flex;
+
+    margin: 14px 0 14px 44px;
+
+    .search-group-name {
+        width: 42px;
+        margin-right: 5px;
+        padding: 9px 0;
+
+        color: gray;
+
+        font-family: @f-cera-pro-400-regular;
+        font-size: 12px;
+    }
+
+    .search-group-list {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+
+        .search-group-more {
+            padding: 20px 0 0 14px;
+
+            cursor: pointer;
+
+            color: @color-primary-light;
+
+            font-family: @f-cera-pro-700-bold;
+            font-size: 14px;
+        }
+    }
+}

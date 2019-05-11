@@ -1,0 +1,98 @@
+.cn-dapp-page {
+    overflow: auto;
+    flex: 1;
+
+    background-color: #FFFFFF;
+
+    .header {
+        justify-content: flex-start;
+
+        height: 168px;
+        padding: 0 50px;
+
+        background-color: #E6E9F0;
+
+        .header-container {
+            display: flex;
+
+            width: 980px;
+            padding: 40px 0;
+
+            .img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .no-img {
+                border: 1px solid lightgray;
+                border-radius: 12px;
+            }
+
+            .info {
+                flex-direction: column;
+
+                margin-left: 7px;
+            }
+        }
+    }
+
+    .content {
+        padding: 0 20px;
+
+        .content-container {
+            .main {
+                flex: 1;
+
+                .divider {
+                    margin: 30px 0 10px;
+
+                    opacity: .3;
+                    border-bottom: 1px solid #ABABAB;
+                }
+
+                .widget-container {
+                    display: flex;
+                    align-items: stretch;
+                    flex-wrap: wrap;
+
+                    margin-bottom: 30px;
+
+                    .widget {
+                        margin: 0 30px 20px 0;
+
+                        .widget-blchn {
+                            width: 30px;
+                        }
+
+                        .widget-platform {
+                            width: 28px;
+                            margin-right: 6px;
+                        }
+
+                        .widget-category {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+
+            .aside {
+                width: 268px;
+                margin-left: 34px;
+
+                .aside-info {
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+
+                    margin-bottom: 40px;
+
+                    .widget {
+                        width: 50%;
+                        margin: 12px 0;
+                    }
+                }
+            }
+        }
+    }
+}

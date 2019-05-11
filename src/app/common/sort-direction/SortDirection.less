@@ -1,0 +1,30 @@
+@import '../../../styles/variables.less';
+
+.sort-direction {
+    cursor: pointer;
+
+    .sort-direction-text {
+        // padding-right: 3px;
+        letter-spacing: .3px;
+
+        color: #171718;
+
+        font-family: @f-cera-pro-500-medium;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .sort-direction-icon {
+        width: 11px;
+
+        transition: transform .2s 0s ease;
+
+        &.up {
+            transform: rotateZ(-180deg);
+        }
+
+        svg > polygon {
+            fill: black;
+        }
+    }
+}

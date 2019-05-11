@@ -1,0 +1,27 @@
+@import '../../../styles/variables.less';
+
+.copy-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 71px;
+    height: 33px;
+
+    cursor: pointer;
+
+    border-radius: 4px;
+    background-color: @color-secondary;
+
+    font-family: @f-cera-pro-700-bold;
+
+    .img-copy-button {
+        width: 11px;
+        height: 13px;
+        margin-right: 7px;
+    }
+
+    &:active {
+        background-color: @color-secondary-hover;
+    }
+}

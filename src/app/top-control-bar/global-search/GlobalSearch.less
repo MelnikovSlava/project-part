@@ -1,0 +1,63 @@
+@import '../../../styles/variables.less';
+
+.global-search {
+    display: flex;
+
+    width: 580px;
+    height: 43px;
+    margin-right: 28px;
+
+    .global-search-input-container {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        flex: 1;
+
+        .global-search-input {
+            flex: 1;
+
+            height: 100%;
+            padding-left: 13px;
+
+            color: #191919;
+            border: 1.1px solid lightgray;
+            border-right: none;
+            border-radius: 2px 0 0 2px;
+
+            font-family: @f-cera-pro-400-regular;
+            font-size: 14px;
+
+            &:focus {
+                border: 1.1px solid #217F96;
+                border-right: none;
+            }
+        }
+
+        .global-search-input-icon-clear {
+            position: absolute;
+            right: 15px;
+
+            width: 15px;
+            height: 15px;
+
+            cursor: pointer;
+        }
+    }
+
+    .global-search-btn {
+        width: 82px;
+
+        color: white;
+        border-radius: 0 2px 2px 0;
+        background: linear-gradient(0deg, #16738C 0%, #51B1C0 100%);
+
+        font-family: @f-cera-pro-700-bold;
+        font-size: 14px;
+        line-height: 18px;
+
+        &:active {
+            background: linear-gradient(0deg, #16738C 10%, #51B1C0 90%);
+        }
+    }
+}

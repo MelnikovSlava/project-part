@@ -1,0 +1,18 @@
+@import '../../../../styles/mixins.less';
+
+.rank-sort-bar {
+    .s-b-common();
+
+    .rank-sort-bar-rank {
+        .itm-rank();
+    }
+
+    .rank-sort-bar-name {
+        .itm-name();
+        .s-b-name-padding();
+    }
+
+    .rank-sort-bar-voting, .rank-sort-bar-bounty, .rank-sort-bar-moving, .rank-sort-bar-vote {
+        .itm-flex();
+    }
+}

@@ -1,0 +1,40 @@
+@import '../../../styles/variables.less';
+
+.cn-contract-list {
+    .list-wrapper {
+        overflow-y: auto;
+
+        max-height: 300px;
+    }
+
+    .title {
+        margin-bottom: 10px;
+    }
+
+    .item {
+        width: 220px;
+        margin-bottom: 8px;
+
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .item-copy {
+        width: 17px;
+        height: 17px;
+        margin-bottom: 8px;
+        margin-left: 15px;
+
+        background-color: #FFFFFF;
+
+        i > svg > path {
+            margin: 0;
+
+            fill: black;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@import '../../styles/variables.less';
+
+.app-container {
+    display: flex;
+    overflow: hidden;
+
+    background-color: @color-background;
+
+    .navigation {
+        display: flex;
+    }
+
+    .main-content-container {
+        overflow-y: auto;
+        flex: 1;
+
+        .m-wrapper {
+            display: flex;
+            flex-direction: column;
+
+            min-height: 100%;
+
+            .main-content {
+                display: flex;
+
+                padding: 0 25px 25px;
+            }
+
+            .top-bar-container {
+                position: relative;
+
+                padding: 0 20px;
+            }
+        }
+    }
+}

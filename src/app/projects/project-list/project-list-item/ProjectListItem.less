@@ -1,0 +1,22 @@
+@import '../../../../styles/variables.less';
+@import '../../../../styles/mixins.less';
+
+.project-list-item {
+    .lst-common();
+
+    .project-list-item-rank {
+        .itm-rank();
+    }
+
+    .project-list-item-name {
+        .itm-name();
+    }
+
+    .project-list-item-blockchain-icon, .project-list-item-platform-icon {
+        .p-l-icon();
+    }
+
+    .project-list-item-platform, .project-list-item-subtype, .project-list-item-blockchain {
+        .itm-flex();
+    }
+}
